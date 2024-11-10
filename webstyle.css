@@ -1,0 +1,1041 @@
+
+/* 通用 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 設置所有元素的盒子模型為 border-box，便於設定寬度和內邊距 */
+    font-family: "LXGW WenKai TC", Arial, sans-serif; /* 設置通用字體*/
+}
+
+
+
+/* 頁面背景 */
+body {
+    background-color: #ffe4f0; /* 背景顏色 */
+}
+
+/* 頁面頭部 */
+header {
+    background-color: #f5689e; /* 背景顏色 */
+    text-align: center; /* 文字置中 */
+    font-weight: bold; /* 設置文字為粗體 */
+    font-size: 30px; /* 字體大小 */
+    padding: 20px; /* 內邊距 */
+    color: white; /* 字體顏色 */
+}
+
+/* 頁面導航 */
+nav {
+    display: flex; /* 使用 Flexbox 排列 */
+    justify-content: center; /* 水平置中對齊 */
+    justify-content: space-between; /* 讓項目平均分布，左右兩邊有空間 */
+    background-color: #ff92bc; /* 背景顏色 */
+    padding: 10px 50px; /* 內邊距 */
+}
+
+nav a {
+    color: white; /* 超鏈接顏色 */
+    margin: 0 10px; /* 超鏈接的間距 */
+    text-decoration: none; /* 移除下劃線 */
+    font-size: 30px; /* 字體大小 */
+}
+
+/* 主要內容區 */
+main {
+    padding: 0px; /* 內邊距 */
+}
+
+/* 個人資訊區塊 */
+.personal-info {
+    border-radius: 20px; /* 圓角 */
+    padding: 10px; /* 內邊距 */
+}
+
+/* 個人資訊 標題 */
+.title1 {
+    text-align: center; /* 置中 */
+    font-size: 30px; /* 字體大小 */
+    color: white; /* 字體顏色 */
+    font-weight: bold; /* 字體加粗 */
+    background-color: #ffb6c1; /* 背景顏色 */
+    padding: 10px 0; /* 內邊距 */
+    border-radius: 20px; /* 圓角 */
+    margin-top: 15px; /* 標題與內容的上間距 */
+    margin-bottom: 15px; /* 標題與內容的下間距 */
+    margin-left: 10px; /* 標題與內容的左間距 */
+    margin-right: 10px; /* 標題與內容的右間距 */
+}
+
+/* 專業&技能 標題 */
+.title2 {
+    text-align: center; /* 置中 */
+    font-size: 30px; /* 字體大小 */
+    color: white; /* 字體顏色 */
+    font-weight: bold; /* 字體加粗 */
+    background-color: #b7bdff; /* 背景顏色 */
+    padding: 10px 0; /* 內邊距 */
+    margin-bottom: 10px; /* 標題與內容的下間距 */
+}
+
+/* 個人經歷 標題 */
+.title3 {
+    text-align: center; /* 置中 */
+    font-size: 30px; /* 字體大小 */
+    color: white; /* 字體顏色 */
+    font-weight: bold; /* 字體加粗 */
+    background-color: #ffb6c1; /* 背景顏色 */
+    padding: 10px 0; /* 內邊距 */
+    border-radius: 20px; /* 圓角 */
+    margin-top: 15px; /* 標題與內容的上間距 */
+    margin-bottom: 0px; /* 標題與內容的下間距 */
+    margin-left: 10px; /* 標題與內容的左間距 */
+    margin-right: 10px; /* 標題與內容的右間距 */
+}
+
+/* 個人資訊 內容區域（左右分佈） */
+.info-grid {
+    display: grid; /* 使用 Grid 排列 */
+    grid-template-columns: 30% 1fr; /* 設置兩列 */
+    gap: 10px; /* 欄位之間的間距 */
+}
+
+/* 個人資訊 左側區塊 */
+.left-section {
+    background-color: #fffaf0; /* 背景顏色 */
+    padding: 20px; /* 內邊距 */
+    border-radius: 15px; /* 圓角 */
+    margin-left: 10px; /* 標題與內容的左間距 */
+    margin-right: 10px; /* 標題與內容的右間距 */
+    margin-bottom: 5px; /* 標題與內容的下間距 */
+}
+
+/* 個人資訊 右側區塊 */
+.right-section {
+    
+    background-color: #fffaf0; /* 背景顏色 */
+    padding: 20px; /* 內邊距 */
+    border-radius: 15px; /* 圓角 */
+    margin-right: 10px; /* 標題與內容的右間距 */
+    margin-bottom: 5px; /* 標題與內容的下間距 */
+}
+
+/* 個人資訊 左側區塊內圖片與文字的排版 */
+.photo-text {
+    display: flex; /* 使用 Flexbox 排列 */
+    align-items: center; /* 垂直置中 */
+    justify-content: center; /* 水平置中 */
+    margin-top: 10px;
+}
+
+/* 個人資訊 圖片圓形樣式 */
+.photo {
+    text-align: center; /* 文字置中 */
+    border-radius: 50%; /* 圓形 */
+    width: 200px; /* 寬度 */
+    height: 200px; /* 高度 */
+    display: flex; /* 使用 Flexbox 排列 */
+    align-items: center; /* 垂直置中 */
+    justify-content: center; /* 水平置中 */
+    margin-right: 50px; /* 圖片與文字之間的間距 */
+    margin-top: 10px;
+}
+
+/* 個人資訊 文字樣式 */
+.text p, .right-section p {
+    font-size: 20px; /* 字體大小 */
+    color: #333; /* 字體顏色 */
+    margin-bottom: 10px; /* 段落間距 */
+}
+
+/* 個人資訊 座右銘字體樣式 */
+.motto {
+    color: #e9967a; /* 座右銘顏色 */
+    font-weight: bold; /* 粗體 */
+    font-size: 20px; /* 字體大小 */
+}
+
+.song-list {
+    display: flex;           /* 使用 Flexbox 讓所有歌曲項目水平排列 */
+    flex-wrap: wrap;         /* 當空間不足時自動換行 */
+    gap: 20px;               /* 每首歌之間的間距 */
+}
+
+.song-item {
+    display: flex;           /* 讓名稱和播放器垂直排列 */
+    flex-direction: column;  /* 垂直方向排列 */
+    align-items: center;     /* 水平居中 */
+    text-align: center;      /* 歌名文字居中 */
+    margin-bottom: 10px;     /* 每首歌與下一行的間距 */
+}
+
+.song-title {
+    margin-bottom: 5px;      /* 歌名與播放器之間的間距 */
+}
+
+/* 專業&技能 整體區域樣式 */
+.skills-section {
+    display: flex; /* 使用 Flexbox 排列，方便居中對齊 */
+    flex-direction: column; /* 元素垂直排列 */
+    justify-content: center; /* 使技能區塊水平居中 */
+    background-color: #f1effe; /* 外側背景色 */
+    padding: 0px;
+    margin-top: 10px; /* 標題與內容的間距 */
+}
+
+.skills-container {
+    padding: 10px; /* 內側區塊的內邊距 */
+    border-radius: 15px; /* 內側區塊的圓角效果 */
+    display: flex; /* 使用 Flexbox 排列 */
+    flex-direction: column; /* 垂直排列元素 */
+    align-items: center; /* 垂直置中對齊 */
+    max-width: 900px; /* 最大寬度限制，讓內容不會太寬 */
+}
+
+/* 技能 內容區域 */
+.skills-content {
+    display: flex; /* 使用 Flexbox 排列 */
+    justify-content: space-around; /* 平均分佈子元素 */
+    width: 100%; /* 區域寬度占滿父容器 */
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* 程式能力 區塊標題樣式 */
+.programming-skills h3, .other-skills h3 {
+    text-align: center; /* 標題文字居中 */
+    font-weight: bold; /* 字體加粗 */
+    font-size: 25px; /* 標題字體大小 */
+    margin-bottom: 10px;
+}
+
+/* 程式能力 清單樣式 */
+.programming-skills ul {
+    list-style: none; /* 移除列表項的預設項目符號 */
+    padding-left: 0; /* 移除內邊距 */
+    margin-left: 0; /* 移除外邊距 */
+}
+
+.programming-skills li {
+    display: flex; /* 使用 Flexbox 排列，方便圖標和文字對齊 */
+    align-items: center; /* 垂直置中對齊 */
+    margin-bottom: 10px; /* 每個技能項目之間的下方間距 */
+    font-size: 20px; /* 列表項字體大小 */
+}
+
+/* 技能 條圖片樣式 */
+.skill-bar img {
+    margin-left: 20px; /* 左側外邊距，讓圖片和文字分開 */
+    max-width: 90%;
+    height: auto; /* 圖片高度 */
+    border-radius: 30px; /* 圖片圓形效果 */
+}
+
+/* 技能圖標區塊 */
+.other-skills {
+    display: flex; /* 使用 Flexbox 排列 */
+    flex-direction: column; /* 元素垂直排列 */
+    align-items: center auto; /* 垂直居中對齊 */
+    padding: 20px;
+}
+
+/* 技能圖標的容器 */
+.skill-icons {
+    display: flex; /* 使用 Flexbox 排列 */
+    flex-wrap: wrap; /* 如果超出空間，讓元素換行 */
+    justify-content: center; /* 元素水平居中 */
+    gap: 20px; /* 每個技能圖標之間的間距 */
+}
+
+/* 單一技能圖標 */
+.skill {
+    text-align: center; /* 文字居中對齊 */
+    font-size: 20px; /* 技能名稱字體大小 */
+    margin: 10px;
+}
+
+/* 技能圖標圖片樣式 */
+.skill img {
+    width: 100px; /* 圖片寬度 */
+    height: 100px; /* 圖片高度 */
+    border-radius: 50%; /* 圖片圓形效果 */
+}
+
+/* 技能名稱和進度條圖片對齊 */
+.programming-skills li span.skill-bar {
+    display: inline-block; /* 讓圖片部分成為 inline 區塊 */
+    margin-left: auto; /* 將進度條圖片靠右對齊 */
+}
+
+/* 學期區塊的樣式 */
+.semester-section {
+    margin-top: 10px; /* 區塊間距 */
+}
+
+.semester-section h2 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold; /* 字體加粗 */
+}
+
+/* 內容列樣式 */
+.content-row {
+    display: flex;
+    justify-content: space-between; /* 內容均勻分布 */
+    gap: 20px;
+}
+
+.content-row3 {
+    display: flex;
+    justify-content: center; /* 內容均勻分布 */
+    
+}
+
+/* 幻燈片整體區塊樣式 */
+.slideshow-section {
+    display: flex; /* 使用 Flexbox 排版 */
+    flex-direction: column; /* 元素垂直排列 */
+    align-items: center; /* 水平居中對齊 */
+    width: 50%;
+    margin-top: 20px; /* 上方外邊距 */
+    position: relative;          /* 確保幻燈片區塊的定位正確 */
+}
+
+
+
+/* 幻燈片容器樣式 */
+.sc1, .sc2 {
+    position: relative;
+    max-width: 750px;
+    margin: auto;
+    margin-left: 15%;
+}
+
+.sc3 {
+    position: relative;
+    max-width: 750px;
+    margin: auto;
+}
+
+/* 單一幻燈片樣式 */
+.slide {
+    display: none;
+}
+
+/* 幻燈片圖片樣式 */
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* 左右箭頭樣式 */
+.prev, .next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink; /* 背景顏色 */
+    color: white; /* 箭頭顏色 */
+    width: 40px; /* 圓形的寬度 */
+    height: 40px; /* 圓形的高度 */
+    border-radius: 50%; /* 使背景為圓形 */
+    font-size: 24px; /* 箭頭大小 */
+    text-decoration: none; /* 移除連結的預設下劃線 */
+    position: absolute; /* 絕對定位，以便放置在兩側 */
+    top: 50%; /* 垂直置中 */
+    transform: translateY(-50%); /* 調整垂直居中對齊 */
+    cursor: pointer; /* 指針樣式 */
+}
+
+/* 左箭頭位置 */
+.prev {
+    left: -60px; /* 調整距左邊的距離，可根據需求調整 */
+}
+
+/* 右箭頭位置 */
+.next {
+    right: -60px; /* 調整距右邊的距離，可根據需求調整 */
+}
+
+/* 圓點導航容器樣式 */
+.dots-container {
+    justify-content: center;     /* 水平居中對齊圓點 */
+    align-items: center;         /* 垂直居中對齊圓點 */
+    margin-top: 10px;
+}
+
+/* 所有圓點的基本樣式 */
+.dot1 {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot2 {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot3 {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* 活躍狀態的圓點1樣式 */
+.active, .dot1:hover {
+    background-color: #ff9191;
+}
+
+/* 活躍狀態的圓點2樣式 */
+.active, .dot2:hover {
+    background-color: #ff9191;
+}
+
+/* 活躍狀態的圓點3樣式 */
+.active, .dot3:hover {
+    background-color: #ff9191;
+}
+
+/* 第一個簡報的圓點 */
+.sc1 .dot1 {
+    background-color: #bbb;
+}
+
+.sc1 .dot1.active {
+    background-color: #ff9191;
+}
+
+/* 第二個簡報的圓點 */
+.sc2 .dot2 {
+    background-color: #bbb;
+}
+
+.sc2 .dot2.active {
+    background-color: #ff9191;
+}
+
+/* 第三個簡報的圓點 */
+.sc3 .dot3 {
+    background-color: #bbb;
+}
+
+.sc3 .dot3.active {
+    background-color: #ff9191;
+}
+
+video {
+    width: 100%; /* 影片寬度設置為100%，以適應不同裝置 */
+    max-width: 820px; /* 設置最大寬度，避免影片過大 */
+    height: auto;
+    display: flex;
+    align-items: center; /* 垂直置中 */
+    justify-content: center; /* 水平置中 */
+    border-radius: 10px;     /* 圓角 */
+    margin-left: 20px;
+    margin-right: 20%;
+}
+
+.video-section {
+    width: 45%; /* 影片區塊佔 45% 的寬度 */
+    margin-top: 20px; /* 上方外邊距 */
+    margin-right: 20px;
+  }
+
+/* 說明文字樣式 */
+.description {
+    font-size: 20px;
+    line-height: 2.0;
+    text-align: center;
+    margin: 10px 40px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+/* 設置整個聯絡區域 */
+.contact-section {
+    display: grid;  /* 使用 grid 排版 */
+    grid-template-columns: 150px 1fr; /* 左邊固定寬度 150px，右邊自動填滿剩餘空間 */
+    grid-template-rows: 100%; /* 使整個區域高度為 100% */
+    padding: 0; /* 移除 padding，避免空隙 */
+    background-color: #ffedc5; /* 設定背景顏色 */
+    height: 100%; /* 讓聯絡區域的高度填滿父容器 */
+}
+
+/* 左側標題樣式 */
+.contact-title {
+    background-color: #F8AD9D; /* 設置左側標題的背景顏色 */
+    color: white;              /* 設置標題文字顏色 */
+    font-size: 30px;           /* 字體大小 */
+    font-weight: bold;         /* 粗體 */
+    text-align: center;        /* 文字水平置中 */
+    display: flex;             /* 使用 flex 排版，居中對齊文字 */
+    align-items: center;       /* 垂直居中對齊標題文字 */
+    justify-content: center;    /* 水平居中對齊標題文字 */
+    width: 100%; /* 讓左側區塊寬度填滿左邊 */
+    height: 100%; /* 設置標題區塊高度與聯絡區域一致 */
+}
+
+/* 右側圖示區域樣式 */
+.contact-links {
+    display: flex;             /* 使用 flex 排版，使每個連結水平排列 */
+    align-items: center;       /* 垂直居中對齊圖示和文字 */
+    justify-content: space-around; /* 將每個圖示均勻分佈 */
+    flex-grow: 1;              /* 讓右側區域自動填滿剩餘的空間 */
+    padding: 0px 10px;        /* 設置圖示區域的內邊距 */
+    height: 100%;              /* 讓右側區域的高度與聯絡區域一致 */
+}
+
+/* 每個連結樣式 */
+.contact-links a {
+    text-decoration: none;     /* 移除連結的預設底線 */
+    color: #333;              /* 設置文字顏色 */
+    font-family: "Times New Roman", serif; /* 設置字體 */
+    font-size: 20px;           /* 設置字體大小 */
+    font-weight: bold;         /* 設置文字為粗體 */
+    display: flex;             /* 使用 flex 排版，讓圖示和文字垂直排列 */
+    flex-direction: column;    /* 讓圖示和文字垂直排列 */
+    align-items: center;       /* 垂直居中對齊圖示和文字 */
+    margin-bottom: 20px;
+}
+
+/* 圖片樣式 */
+.contact-links img {
+    width: 80px;               /* 設置圖片的寬度 */
+    height: 80px;              /* 設置圖片的高度 */
+    border-radius: 50%;        /* 讓圖片變成圓形 */
+    margin-bottom: 10px;        /* 圖片和文字間距 */
+    object-fit: cover;         /* 讓圖片填滿圓形區域並自動裁剪 */
+    margin-top: 20px;
+}
+/* 通用 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 設置所有元素的盒子模型為 border-box，便於設定寬度和內邊距 */
+    font-family: "LXGW WenKai TC", Arial, sans-serif; /* 設置通用字體*/
+}
+
+
+
+/* 頁面背景 */
+body {
+    background-color: #ffe4f0; /* 背景顏色 */
+}
+
+/* 頁面頭部 */
+header {
+    background-color: #f5689e; /* 背景顏色 */
+    text-align: center; /* 文字置中 */
+    font-weight: bold; /* 設置文字為粗體 */
+    font-size: 30px; /* 字體大小 */
+    padding: 20px; /* 內邊距 */
+    color: white; /* 字體顏色 */
+}
+
+/* 頁面導航 */
+nav {
+    display: flex; /* 使用 Flexbox 排列 */
+    justify-content: center; /* 水平置中對齊 */
+    justify-content: space-between; /* 讓項目平均分布，左右兩邊有空間 */
+    background-color: #ff92bc; /* 背景顏色 */
+    padding: 10px 50px; /* 內邊距 */
+}
+
+nav a {
+    color: white; /* 超鏈接顏色 */
+    margin: 0 10px; /* 超鏈接的間距 */
+    text-decoration: none; /* 移除下劃線 */
+    font-size: 30px; /* 字體大小 */
+}
+
+/* 主要內容區 */
+main {
+    padding: 0px; /* 內邊距 */
+}
+
+/* 個人資訊區塊 */
+.personal-info {
+    border-radius: 20px; /* 圓角 */
+    padding: 10px; /* 內邊距 */
+}
+
+/* 個人資訊 標題 */
+.title1 {
+    text-align: center; /* 置中 */
+    font-size: 30px; /* 字體大小 */
+    color: white; /* 字體顏色 */
+    font-weight: bold; /* 字體加粗 */
+    background-color: #ffb6c1; /* 背景顏色 */
+    padding: 10px 0; /* 內邊距 */
+    border-radius: 20px; /* 圓角 */
+    margin-top: 15px; /* 標題與內容的上間距 */
+    margin-bottom: 15px; /* 標題與內容的下間距 */
+    margin-left: 10px; /* 標題與內容的左間距 */
+    margin-right: 10px; /* 標題與內容的右間距 */
+}
+
+/* 專業&技能 標題 */
+.title2 {
+    text-align: center; /* 置中 */
+    font-size: 30px; /* 字體大小 */
+    color: white; /* 字體顏色 */
+    font-weight: bold; /* 字體加粗 */
+    background-color: #b7bdff; /* 背景顏色 */
+    padding: 10px 0; /* 內邊距 */
+    margin-bottom: 10px; /* 標題與內容的下間距 */
+}
+
+/* 個人經歷 標題 */
+.title3 {
+    text-align: center; /* 置中 */
+    font-size: 30px; /* 字體大小 */
+    color: white; /* 字體顏色 */
+    font-weight: bold; /* 字體加粗 */
+    background-color: #ffb6c1; /* 背景顏色 */
+    padding: 10px 0; /* 內邊距 */
+    border-radius: 20px; /* 圓角 */
+    margin-top: 15px; /* 標題與內容的上間距 */
+    margin-bottom: 0px; /* 標題與內容的下間距 */
+    margin-left: 10px; /* 標題與內容的左間距 */
+    margin-right: 10px; /* 標題與內容的右間距 */
+}
+
+/* 個人資訊 內容區域（左右分佈） */
+.info-grid {
+    display: grid; /* 使用 Grid 排列 */
+    grid-template-columns: 30% 1fr; /* 設置兩列 */
+    gap: 10px; /* 欄位之間的間距 */
+}
+
+/* 個人資訊 左側區塊 */
+.left-section {
+    background-color: #fffaf0; /* 背景顏色 */
+    padding: 20px; /* 內邊距 */
+    border-radius: 15px; /* 圓角 */
+    margin-left: 10px; /* 標題與內容的左間距 */
+    margin-right: 10px; /* 標題與內容的右間距 */
+    margin-bottom: 5px; /* 標題與內容的下間距 */
+}
+
+/* 個人資訊 右側區塊 */
+.right-section {
+    
+    background-color: #fffaf0; /* 背景顏色 */
+    padding: 20px; /* 內邊距 */
+    border-radius: 15px; /* 圓角 */
+    margin-right: 10px; /* 標題與內容的右間距 */
+    margin-bottom: 5px; /* 標題與內容的下間距 */
+}
+
+/* 個人資訊 左側區塊內圖片與文字的排版 */
+.photo-text {
+    display: flex; /* 使用 Flexbox 排列 */
+    align-items: center; /* 垂直置中 */
+    justify-content: center; /* 水平置中 */
+    margin-top: 10px;
+}
+
+/* 個人資訊 圖片圓形樣式 */
+.photo {
+    text-align: center; /* 文字置中 */
+    border-radius: 50%; /* 圓形 */
+    width: 200px; /* 寬度 */
+    height: 200px; /* 高度 */
+    display: flex; /* 使用 Flexbox 排列 */
+    align-items: center; /* 垂直置中 */
+    justify-content: center; /* 水平置中 */
+    margin-right: 50px; /* 圖片與文字之間的間距 */
+    margin-top: 10px;
+}
+
+/* 個人資訊 文字樣式 */
+.text p, .right-section p {
+    font-size: 20px; /* 字體大小 */
+    color: #333; /* 字體顏色 */
+    margin-bottom: 10px; /* 段落間距 */
+}
+
+/* 個人資訊 座右銘字體樣式 */
+.motto {
+    color: #e9967a; /* 座右銘顏色 */
+    font-weight: bold; /* 粗體 */
+    font-size: 20px; /* 字體大小 */
+}
+
+.song-list {
+    display: flex;           /* 使用 Flexbox 讓所有歌曲項目水平排列 */
+    flex-wrap: wrap;         /* 當空間不足時自動換行 */
+    gap: 20px;               /* 每首歌之間的間距 */
+}
+
+.song-item {
+    display: flex;           /* 讓名稱和播放器垂直排列 */
+    flex-direction: column;  /* 垂直方向排列 */
+    align-items: center;     /* 水平居中 */
+    text-align: center;      /* 歌名文字居中 */
+    margin-bottom: 10px;     /* 每首歌與下一行的間距 */
+}
+
+.song-title {
+    margin-bottom: 5px;      /* 歌名與播放器之間的間距 */
+}
+
+/* 專業&技能 整體區域樣式 */
+.skills-section {
+    display: flex; /* 使用 Flexbox 排列，方便居中對齊 */
+    flex-direction: column; /* 元素垂直排列 */
+    justify-content: center; /* 使技能區塊水平居中 */
+    background-color: #f1effe; /* 外側背景色 */
+    padding: 0px;
+    margin-top: 10px; /* 標題與內容的間距 */
+}
+
+.skills-container {
+    padding: 10px; /* 內側區塊的內邊距 */
+    border-radius: 15px; /* 內側區塊的圓角效果 */
+    display: flex; /* 使用 Flexbox 排列 */
+    flex-direction: column; /* 垂直排列元素 */
+    align-items: center; /* 垂直置中對齊 */
+    max-width: 900px; /* 最大寬度限制，讓內容不會太寬 */
+}
+
+/* 技能 內容區域 */
+.skills-content {
+    display: flex; /* 使用 Flexbox 排列 */
+    justify-content: space-around; /* 平均分佈子元素 */
+    width: 100%; /* 區域寬度占滿父容器 */
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* 程式能力 區塊標題樣式 */
+.programming-skills h3, .other-skills h3 {
+    text-align: center; /* 標題文字居中 */
+    font-weight: bold; /* 字體加粗 */
+    font-size: 25px; /* 標題字體大小 */
+    margin-bottom: 10px;
+}
+
+/* 程式能力 清單樣式 */
+.programming-skills ul {
+    list-style: none; /* 移除列表項的預設項目符號 */
+    padding-left: 0; /* 移除內邊距 */
+    margin-left: 0; /* 移除外邊距 */
+}
+
+.programming-skills li {
+    display: flex; /* 使用 Flexbox 排列，方便圖標和文字對齊 */
+    align-items: center; /* 垂直置中對齊 */
+    margin-bottom: 10px; /* 每個技能項目之間的下方間距 */
+    font-size: 20px; /* 列表項字體大小 */
+}
+
+/* 技能 條圖片樣式 */
+.skill-bar img {
+    margin-left: 20px; /* 左側外邊距，讓圖片和文字分開 */
+    max-width: 90%;
+    height: auto; /* 圖片高度 */
+    border-radius: 30px; /* 圖片圓形效果 */
+}
+
+/* 技能圖標區塊 */
+.other-skills {
+    display: flex; /* 使用 Flexbox 排列 */
+    flex-direction: column; /* 元素垂直排列 */
+    align-items: center auto; /* 垂直居中對齊 */
+    padding: 20px;
+}
+
+/* 技能圖標的容器 */
+.skill-icons {
+    display: flex; /* 使用 Flexbox 排列 */
+    flex-wrap: wrap; /* 如果超出空間，讓元素換行 */
+    justify-content: center; /* 元素水平居中 */
+    gap: 20px; /* 每個技能圖標之間的間距 */
+}
+
+/* 單一技能圖標 */
+.skill {
+    text-align: center; /* 文字居中對齊 */
+    font-size: 20px; /* 技能名稱字體大小 */
+    margin: 10px;
+}
+
+/* 技能圖標圖片樣式 */
+.skill img {
+    width: 100px; /* 圖片寬度 */
+    height: 100px; /* 圖片高度 */
+    border-radius: 50%; /* 圖片圓形效果 */
+}
+
+/* 技能名稱和進度條圖片對齊 */
+.programming-skills li span.skill-bar {
+    display: inline-block; /* 讓圖片部分成為 inline 區塊 */
+    margin-left: auto; /* 將進度條圖片靠右對齊 */
+}
+
+/* 學期區塊的樣式 */
+.semester-section {
+    margin-top: 10px; /* 區塊間距 */
+}
+
+.semester-section h2 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold; /* 字體加粗 */
+}
+
+/* 內容列樣式 */
+.content-row {
+    display: flex;
+    justify-content: space-between; /* 內容均勻分布 */
+    gap: 20px;
+}
+
+.content-row3 {
+    display: flex;
+    justify-content: center; /* 內容均勻分布 */
+    
+}
+
+/* 幻燈片整體區塊樣式 */
+.slideshow-section {
+    display: flex; /* 使用 Flexbox 排版 */
+    flex-direction: column; /* 元素垂直排列 */
+    align-items: center; /* 水平居中對齊 */
+    width: 50%;
+    margin-top: 20px; /* 上方外邊距 */
+    position: relative;          /* 確保幻燈片區塊的定位正確 */
+}
+
+
+
+/* 幻燈片容器樣式 */
+.sc1, .sc2 {
+    position: relative;
+    max-width: 750px;
+    margin: auto;
+    margin-left: 15%;
+}
+
+.sc3 {
+    position: relative;
+    max-width: 750px;
+    margin: auto;
+}
+
+/* 單一幻燈片樣式 */
+.slide {
+    display: none;
+}
+
+/* 幻燈片圖片樣式 */
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* 左右箭頭樣式 */
+.prev, .next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink; /* 背景顏色 */
+    color: white; /* 箭頭顏色 */
+    width: 40px; /* 圓形的寬度 */
+    height: 40px; /* 圓形的高度 */
+    border-radius: 50%; /* 使背景為圓形 */
+    font-size: 24px; /* 箭頭大小 */
+    text-decoration: none; /* 移除連結的預設下劃線 */
+    position: absolute; /* 絕對定位，以便放置在兩側 */
+    top: 50%; /* 垂直置中 */
+    transform: translateY(-50%); /* 調整垂直居中對齊 */
+    cursor: pointer; /* 指針樣式 */
+}
+
+/* 左箭頭位置 */
+.prev {
+    left: -60px; /* 調整距左邊的距離，可根據需求調整 */
+}
+
+/* 右箭頭位置 */
+.next {
+    right: -60px; /* 調整距右邊的距離，可根據需求調整 */
+}
+
+/* 圓點導航容器樣式 */
+.dots-container {
+    justify-content: center;     /* 水平居中對齊圓點 */
+    align-items: center;         /* 垂直居中對齊圓點 */
+    margin-top: 10px;
+}
+
+/* 所有圓點的基本樣式 */
+.dot1 {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot2 {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot3 {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* 活躍狀態的圓點1樣式 */
+.active, .dot1:hover {
+    background-color: #ff9191;
+}
+
+/* 活躍狀態的圓點2樣式 */
+.active, .dot2:hover {
+    background-color: #ff9191;
+}
+
+/* 活躍狀態的圓點3樣式 */
+.active, .dot3:hover {
+    background-color: #ff9191;
+}
+
+/* 第一個簡報的圓點 */
+.sc1 .dot1 {
+    background-color: #bbb;
+}
+
+.sc1 .dot1.active {
+    background-color: #ff9191;
+}
+
+/* 第二個簡報的圓點 */
+.sc2 .dot2 {
+    background-color: #bbb;
+}
+
+.sc2 .dot2.active {
+    background-color: #ff9191;
+}
+
+/* 第三個簡報的圓點 */
+.sc3 .dot3 {
+    background-color: #bbb;
+}
+
+.sc3 .dot3.active {
+    background-color: #ff9191;
+}
+
+video {
+    width: 100%; /* 影片寬度設置為100%，以適應不同裝置 */
+    max-width: 820px; /* 設置最大寬度，避免影片過大 */
+    height: auto;
+    display: flex;
+    align-items: center; /* 垂直置中 */
+    justify-content: center; /* 水平置中 */
+    border-radius: 10px;     /* 圓角 */
+    margin-left: 20px;
+    margin-right: 20%;
+}
+
+.video-section {
+    width: 45%; /* 影片區塊佔 45% 的寬度 */
+    margin-top: 20px; /* 上方外邊距 */
+    margin-right: 20px;
+  }
+
+/* 說明文字樣式 */
+.description {
+    font-size: 20px;
+    line-height: 2.0;
+    text-align: center;
+    margin: 10px 40px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+/* 設置整個聯絡區域 */
+.contact-section {
+    display: grid;  /* 使用 grid 排版 */
+    grid-template-columns: 150px 1fr; /* 左邊固定寬度 150px，右邊自動填滿剩餘空間 */
+    grid-template-rows: 100%; /* 使整個區域高度為 100% */
+    padding: 0; /* 移除 padding，避免空隙 */
+    background-color: #ffedc5; /* 設定背景顏色 */
+    height: 100%; /* 讓聯絡區域的高度填滿父容器 */
+}
+
+/* 左側標題樣式 */
+.contact-title {
+    background-color: #F8AD9D; /* 設置左側標題的背景顏色 */
+    color: white;              /* 設置標題文字顏色 */
+    font-size: 30px;           /* 字體大小 */
+    font-weight: bold;         /* 粗體 */
+    text-align: center;        /* 文字水平置中 */
+    display: flex;             /* 使用 flex 排版，居中對齊文字 */
+    align-items: center;       /* 垂直居中對齊標題文字 */
+    justify-content: center;    /* 水平居中對齊標題文字 */
+    width: 100%; /* 讓左側區塊寬度填滿左邊 */
+    height: 100%; /* 設置標題區塊高度與聯絡區域一致 */
+}
+
+/* 右側圖示區域樣式 */
+.contact-links {
+    display: flex;             /* 使用 flex 排版，使每個連結水平排列 */
+    align-items: center;       /* 垂直居中對齊圖示和文字 */
+    justify-content: space-around; /* 將每個圖示均勻分佈 */
+    flex-grow: 1;              /* 讓右側區域自動填滿剩餘的空間 */
+    padding: 0px 10px;        /* 設置圖示區域的內邊距 */
+    height: 100%;              /* 讓右側區域的高度與聯絡區域一致 */
+}
+
+/* 每個連結樣式 */
+.contact-links a {
+    text-decoration: none;     /* 移除連結的預設底線 */
+    color: #333;              /* 設置文字顏色 */
+    font-family: "Times New Roman", serif; /* 設置字體 */
+    font-size: 20px;           /* 設置字體大小 */
+    font-weight: bold;         /* 設置文字為粗體 */
+    display: flex;             /* 使用 flex 排版，讓圖示和文字垂直排列 */
+    flex-direction: column;    /* 讓圖示和文字垂直排列 */
+    align-items: center;       /* 垂直居中對齊圖示和文字 */
+    margin-bottom: 20px;
+}
+
+/* 圖片樣式 */
+.contact-links img {
+    width: 80px;               /* 設置圖片的寬度 */
+    height: 80px;              /* 設置圖片的高度 */
+    border-radius: 50%;        /* 讓圖片變成圓形 */
+    margin-bottom: 10px;        /* 圖片和文字間距 */
+    object-fit: cover;         /* 讓圖片填滿圓形區域並自動裁剪 */
+    margin-top: 20px;
+}
